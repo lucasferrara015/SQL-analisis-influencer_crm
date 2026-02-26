@@ -59,6 +59,8 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Pregunta de negocio:** ¿Qué influencers convierten mejor en clics?  
 **Insight esperado:** ROI basado en clics generados vs inversión.  
 📂 [Ver consulta completa](./sql/roi_clicks.sql)
+📸 Resultado en MySQL Workbench (vista parcial):  
+![ROI Click Result](./screenshots/roi_click_screenshot_result.png)
 
 ---
 

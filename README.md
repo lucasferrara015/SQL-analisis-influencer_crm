@@ -130,6 +130,7 @@ Priorizar campañas con bajo costo por interacción para maximizar ROI, y ajusta
 📂 [Ver consulta completa](./sql/engagement_tematica.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
+
 ![Tematica engagement Result](./screenshots/tematica_engagement_promedio_screenshot_result.png)
 
 **Insight de negocio:** 
@@ -186,6 +187,7 @@ Elena Muñoz, Carlos Ruiz, Sofía Medina y Diego Rivas presentan menor eficienci
 📂 [Ver consulta completa](./sql/matriz_rendimiento_coste.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
+
 ![Matriz rendimiento coste Result](./screenshots/matriz_rendimiento_coste_screenshot_result.png)
 
 **Insight de negocio:** 
@@ -203,6 +205,7 @@ Descartar/renegociar: Javier Torres y Diego Rivas → ROI insuficiente frente a 
 📂 [Ver consulta completa](./sql/frecuencia_optima.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
+
 ![Optimizacion freuencia screenshot Result](./screenshots/optimizacion_frecuencia_screenshot_result.png)
 
 **Insight de negocio:** 
@@ -222,6 +225,7 @@ mantener un rango de 2–3 publicaciones semanales como estándar, reservando pu
 📂 [Ver consulta completa](./sql/lealtad_influencer.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
+
 ![Lealtad influencer Result](./screenshots/lealtad_influencer_screenshot_result.png)
 
 **Insight de negocio:** 

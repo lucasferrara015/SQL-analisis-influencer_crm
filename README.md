@@ -228,27 +228,57 @@ mantener un rango de 2–3 publicaciones semanales como estándar, reservando pu
 
 ![Lealtad influencer Result](./screenshots/lealtad_influencer_screenshot_result.png)
 
-**Insight de negocio:** 
+**Insight de negocio:**
 
+Mejora en el tiempo: Ana López, María García, Diego Rivas y Elena Muñoz logran aumentar su engagement en colaboraciones posteriores, mostrando capacidad de sostener y escalar el interés de la audiencia.
+Se mantiene: Carlos Ruiz, Valentina Paz y Roberto Sánchez mantienen un engagement estable, lo que los hace confiables para campañas de continuidad sin riesgo de caída.
+Declina: Javier Torres y Sofía Medina muestran una reducción significativa en engagement con el tiempo, lo que sugiere saturación o pérdida de relevancia; requieren ajustes de estrategia o renegociación de condiciones.
+👉 Estrategia: priorizar a quienes mejoran, sostener a los estables y replantear la inversión en quienes declinan.
 ---
 
 ## 11. Rendimiento por plataforma y formato
 **Pregunta de negocio:** ¿Qué plataformas y formatos generan mayor engagement promedio?  
-**Insight esperado:** Comparación de rendimiento por tipo de contenido.  
+  
 📂 [Ver consulta completa](./sql/rendimiento_plataforma_formato.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
 
 ![Rendimiento plataforma formato Result](./screenshots/rendimiento_plataforma_formato_screenshot_result.png)
+
+**Insight de negocio:** 
+
+TikTok (video) domina en engagement promedio, confirmando que los contenidos audiovisuales cortos y dinámicos son los más efectivos para captar la atención.
+
+YouTube (video) también muestra un rendimiento elevado, ideal para contenidos más largos y profundos que mantienen la interacción.
+
+Instagram reels se consolidan como el formato más competitivo dentro de Instagram, con un engagement cercano al de los videos, siendo la mejor apuesta en esa plataforma.
+
+Instagram video tiene un rendimiento intermedio, mientras que Instagram imagen queda muy por debajo, evidenciando que los formatos estáticos generan menor interacción.
+
+**Estrategia:** priorizar video en TikTok y YouTube, mantener reels en Instagram como formato clave, y reducir la inversión en publicaciones estáticas para maximizar el retorno en engagement.
+
+
+
 ---
 
 ## 12. Crecimiento de audiencia: Ganancia de seguidores durante la campaña
 **Pregunta de negocio:** ¿Qué campañas generan mayor crecimiento de seguidores?  
-**Insight esperado:** Tasa de crecimiento relativa de audiencia.  
+  
 📂 [Ver consulta completa](./sql/crecimiento_audiencia.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
 ![Crecimiento audiencia seguidores campania Result](./screenshots/crecimiento_audiencia_seguidores_camapania_screenshot_result.png)
+
+**Insight de negocio:** 
+
+Elena Muñoz lidera con la mayor tasa de crecimiento (21.43%), mostrando fuerte impacto en campañas.
+Ana López y María García mantienen un crecimiento sólido (20%), posicionándose como influencers confiables.
+Diego Rivas presenta crecimiento moderado (18.75%).
+Javier Torres apenas crece (2.56%), lo que sugiere saturación de su audiencia.
+👉 Priorizar a Elena Muñoz y mantener inversión en Ana López y María García para maximizar ROI.
+
+
+
 ---
 
 ## 📌 Conclusión

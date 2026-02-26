@@ -69,6 +69,8 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Insight esperado:** Filtrado por engagement real y estado de colaboración.  
 📂 [Ver consulta completa](./sql/influencers_recomendados.sql)
 
+📸 Resultado en MySQL Workbench (vista parcial):  
+![Influencer recomendado Result](./screenshots/influencer_recomendado_screenshot_result.png)
 ---
 
 ## 4. Evaluación de campañas: Rentabilidad (Costo por interacción)

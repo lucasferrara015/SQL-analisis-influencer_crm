@@ -268,6 +268,7 @@ Instagram video tiene un rendimiento intermedio, mientras que Instagram imagen q
 📂 [Ver consulta completa](./sql/crecimiento_audiencia.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
+
 ![Crecimiento audiencia seguidores campania Result](./screenshots/crecimiento_audiencia_seguidores_camapania_screenshot_result.png)
 
 **Insight de negocio:** 

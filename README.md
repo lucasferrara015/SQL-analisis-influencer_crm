@@ -89,9 +89,8 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Insight esperado:** Comparación de temáticas según interacciones/publicación.  
 📂 [Ver consulta completa](./sql/engagement_tematica.sql)
 
-📸 Resultado en MySQL Workbench (vista parcial):  
+📸 Resultado en MySQL Workbench (vista parcial):
 ![Tematica engagement Result](./screenshots/tematica_engagement_promedio_screenshot_result.png)
-
 ---
 
 ## 6. Evolución del engagement en el tiempo
@@ -100,6 +99,7 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 📂 [Ver consulta completa](./sql/evolucion_engagement.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
+
 ![Evolucion engagement en el tiempo Result](./screenshots/evolucion_engagement_enel_tiempo_screenshot_result.png)
 ---
 

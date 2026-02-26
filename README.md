@@ -234,6 +234,7 @@ Mejora en el tiempo: Ana López, María García, Diego Rivas y Elena Muñoz logr
 Se mantiene: Carlos Ruiz, Valentina Paz y Roberto Sánchez mantienen un engagement estable, lo que los hace confiables para campañas de continuidad sin riesgo de caída.
 Declina: Javier Torres y Sofía Medina muestran una reducción significativa en engagement con el tiempo, lo que sugiere saturación o pérdida de relevancia; requieren ajustes de estrategia o renegociación de condiciones.
 👉 Estrategia: priorizar a quienes mejoran, sostener a los estables y replantear la inversión en quienes declinan.
+
 ---
 
 ## 11. Rendimiento por plataforma y formato

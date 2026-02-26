@@ -80,12 +80,17 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Insight esperado:** Ranking de campañas más rentables.  
 📂 [Ver consulta completa](./sql/costo_por_interaccion.sql)
 
+📸 Resultado en MySQL Workbench (vista parcial):  
+![Campania costo por interacción Result](./screenshots/campania_costo_por_interaccion_screenshot_result.png)
 ---
 
 ## 5. Análisis de contenido: Mejores temáticas por engagement real
 **Pregunta de negocio:** ¿Qué temáticas generan mayor engagement promedio?  
 **Insight esperado:** Comparación de temáticas según interacciones/publicación.  
 📂 [Ver consulta completa](./sql/engagement_tematica.sql)
+
+📸 Resultado en MySQL Workbench (vista parcial):  
+![Tematica engagement Result](./screenshots/tematica_engagement_promedio_screenshot_result.png)
 
 ---
 
@@ -94,12 +99,17 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Insight esperado:** Tendencia diaria, semanal o mensual.  
 📂 [Ver consulta completa](./sql/evolucion_engagement.sql)
 
+📸 Resultado en MySQL Workbench (vista parcial):
+![Evolucion engagement en el tiempo Result](./screenshots/evolucion_engagement_enel_tiempo_screenshot_result.png)
 ---
 
 ## 7. Medición de ventas: Tasa de conversión de códigos de descuento
 **Pregunta de negocio:** ¿Qué códigos de descuento generan más ventas y ROI?  
 **Insight esperado:** Conversión clics → ventas y ROI por ingresos.  
 📂 [Ver consulta completa](./sql/conversion_codigos.sql)
+
+📸 Resultado en MySQL Workbench (vista parcial):
+![Ventas roi tasa conversion Result](./screenshots/ventas_roi_tasa_conversion_screenshot_result.png)
 
 ---
 
@@ -108,6 +118,8 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Insight esperado:** Cuadrantes estratégicos para priorizar inversión.  
 📂 [Ver consulta completa](./sql/matriz_rendimiento_coste.sql)
 
+📸 Resultado en MySQL Workbench (vista parcial):
+![Matriz rendimiento coste Result](./screenshots/matriz_rendimiento_coste_screenshot_result.png)
 ---
 
 ## 9. Optimización de frecuencia
@@ -115,6 +127,8 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Insight esperado:** Relación publicaciones vs engagement promedio.  
 📂 [Ver consulta completa](./sql/frecuencia_optima.sql)
 
+📸 Resultado en MySQL Workbench (vista parcial):
+![Optimizacion freuencia screenshot Result](./screenshots/optimizacion_frecuencia_screenshot_result.png)
 ---
 
 ## 10. Lealtad del influencer: Repetibilidad y mejora en el tiempo
@@ -122,6 +136,8 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Insight esperado:** Clasificación de tendencia (mejora, se mantiene, declina).  
 📂 [Ver consulta completa](./sql/lealtad_influencer.sql)
 
+📸 Resultado en MySQL Workbench (vista parcial):
+![Lealtad influencer Result](./screenshots/lealtad_influencer_screenshot_result.png)
 ---
 
 ## 11. Rendimiento por plataforma y formato
@@ -129,6 +145,8 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Insight esperado:** Comparación de rendimiento por tipo de contenido.  
 📂 [Ver consulta completa](./sql/rendimiento_plataforma_formato.sql)
 
+📸 Resultado en MySQL Workbench (vista parcial):
+![Rendimiento plataforma formato Result](./screenshots/rendimiento_plataforma_formato_screenshot_result.png)
 ---
 
 ## 12. Crecimiento de audiencia: Ganancia de seguidores durante la campaña
@@ -136,6 +154,8 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 **Insight esperado:** Tasa de crecimiento relativa de audiencia.  
 📂 [Ver consulta completa](./sql/crecimiento_audiencia.sql)
 
+📸 Resultado en MySQL Workbench (vista parcial):
+![Crecimiento audiencia seguidores campania Result](./screenshots/crecimiento_audiencia_seguidores_camapania_screenshot_result.png)
 ---
 
 ## 📌 Conclusión

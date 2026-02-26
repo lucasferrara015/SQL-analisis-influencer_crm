@@ -146,8 +146,8 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 📂 [Ver consulta completa](./sql/rendimiento_plataforma_formato.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
-![Rendimiento plataforma formato Result](./screenshots/rendimiento_plataforma_formato_screenshot_result.png)
 
+![Rendimiento plataforma formato Result](./screenshots/rendimiento_plataforma_formato_screenshot_result.png)
 ---
 
 ## 12. Crecimiento de audiencia: Ganancia de seguidores durante la campaña

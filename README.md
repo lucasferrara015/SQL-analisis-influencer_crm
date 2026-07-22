@@ -239,12 +239,14 @@ La estrategia debe concentrar recursos en los perfiles eficientes, optimizar o r
 
 **Insight de negocio:** 
 
-Frecuencia óptima: los influencers con 2–3 publicaciones por semana (ej. María García, Roberto Sánchez, Valentina Paz) mantienen un engagement promedio alto y estable.
-Saturación detectada: cuando la frecuencia supera las 4–5 publicaciones semanales (ej. Sofía Medina, Javier Torres), el engagement promedio tiende a caer, indicando sobreexposición de la audiencia.
-Publicaciones aisladas (1 por semana) muestran picos de engagement muy altos (ej. Ana López, Diego Rivas), lo que sugiere que la audiencia responde mejor a contenidos menos frecuentes pero más relevantes.
-**Recomendación estratégica:** 
+El rango 1–2 publicaciones semanales muestra un engagement promedio sólido (3886.82) y es el más representativo, con 31 semanas analizadas. Esto confirma que la frecuencia baja pero constante mantiene la atención de la audiencia sin saturarla.
 
-mantener un rango de 2–3 publicaciones semanales como estándar, reservando publicaciones adicionales solo para campañas especiales, evitando la saturación y maximizando el engagement.
+El rango 3–4 publicaciones semanales reduce el engagement promedio a 1179.20, con 7 semanas analizadas, lo que evidencia que aumentar la frecuencia más allá de 2 publicaciones tiende a disminuir la interacción.
+
+El rango 5+ publicaciones semanales presenta un engagement muy alto (9000.00), pero solo en 1 semana analizada. Esto sugiere un caso excepcional o un pico puntual, no una tendencia sostenible.
+**Cloncusión estratégica:** 
+
+Mantener un rango de 2–3 publicaciones semanales como estándar, reservando publicaciones adicionales solo para campañas especiales, evitando la saturación y maximizando el engagement.
 
 ---
 

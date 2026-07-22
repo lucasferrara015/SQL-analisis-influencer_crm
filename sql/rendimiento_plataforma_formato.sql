@@ -1,29 +1,26 @@
--- ---------------------------------------------------
--- 11. Consulta: Rendimiento por plataforma y formato
--- Objetivo: identificar qué plataformas y formatos generan mayor engagement promedio
--- Lógica: se cuentan las publicaciones y se suman las interacciones (likes, comentarios, compartidos) para calcular el engagement promedio
--- Nota técnica: uso de NULLIF para evitar división por cero; CTE para organizar el cálculo previo de publicaciones y engagement
--- Limitación: no contempla variaciones por temática ni segmentación de audiencia; se centra en métricas agregadas
--- ---------------------------------------------------
+-- Consulta: Top formatos por plataforma con DENSE_RANK
+-- Objetivo: identificar los formatos con mayor engagement promedio dentro de cada plataforma
+-- Lógica: se calcula el promedio de interacciones por formato y se asigna un ranking relativo con DENSE_RANK() PARTITION BY plataforma
+-- Nota técnica: se usa AVG() sobre likes+comentarios+compartidos y COUNT DISTINCT para publicaciones; DENSE_RANK evita saltos en la numeración
+-- Limitación: no contempla la calidad de interacción ni la temporalidad de las publicaciones; el engagement puede variar según campañas específicas
 
--- CTE para calcular publicaciones e interacciones por plataforma y formato
-WITH engagement_por_formato AS (
+-- Top formatos por plataforma con DENSE_RANK
+WITH rendimiento_formatos AS (
     SELECT 
-        p.plataforma, -- plataforma de publicación (ej. Instagram, TikTok)
-        p.formato, -- formato de contenido (ej. reel, post, story)
-        COUNT(p.publicacion_id) AS total_publicaciones, -- número de publicaciones
-        SUM(mp.likes + mp.comentarios + mp.compartidos) AS total_engagement -- total de interacciones
+        p.plataforma,
+        p.formato,
+        ROUND(AVG(mp.likes + mp.comentarios + mp.compartidos), 2) AS engagement_promedio,
+        COUNT(DISTINCT p.publicacion_id) AS total_publicaciones
     FROM publicaciones p
-    JOIN metricas_publicacion mp 
-        ON p.publicacion_id = mp.publicacion_id
+    JOIN metricas_publicacion mp ON p.publicacion_id = mp.publicacion_id
     GROUP BY p.plataforma, p.formato
 )
-
--- Consulta final: engagement promedio por plataforma y formato
 SELECT 
     plataforma,
     formato,
+    engagement_promedio,
     total_publicaciones,
-    total_engagement / NULLIF(total_publicaciones,0) AS engagement_promedio -- promedio de interacciones por publicación
-FROM engagement_por_formato
-ORDER BY engagement_promedio DESC; -- ordena por mayor rendimiento
+    -- Ranking dentro de cada plataforma (ej: Instagram: 1.Reel, 2.Video, 3.Imagen)
+    DENSE_RANK() OVER (PARTITION BY plataforma ORDER BY engagement_promedio DESC) AS rank_en_plataforma
+FROM rendimiento_formatos
+ORDER BY plataforma, rank_en_plataforma;

@@ -261,10 +261,14 @@ Mantener un rango de 2–3 publicaciones semanales como estándar, reservando pu
 
 **Insight de negocio:**
 
-Mejora en el tiempo: Ana López, María García, Diego Rivas y Elena Muñoz logran aumentar su engagement en colaboraciones posteriores, mostrando capacidad de sostener y escalar el interés de la audiencia.
-Se mantiene: Carlos Ruiz, Valentina Paz y Roberto Sánchez mantienen un engagement estable, lo que los hace confiables para campañas de continuidad sin riesgo de caída.
-Declina: Javier Torres y Sofía Medina muestran una reducción significativa en engagement con el tiempo, lo que sugiere saturación o pérdida de relevancia; requieren ajustes de estrategia o renegociación de condiciones.
-👉 Estrategia: priorizar a quienes mejoran, sostener a los estables y replantear la inversión en quienes declinan.
+Este análisis permite ver si un influencer mantiene, mejora o declina su engagement en cada colaboración.
+
+Diego Rivas (ejemplo de tu tabla) aparece con su primera colaboración en estado Estable: engagement inicial de 2485 sin comparación previa.
+
+A medida que se sumen más colaboraciones, se podrá identificar si su tendencia es de mejora sostenida (lealtad y crecimiento), declive (pérdida de interés) o estabilidad (rendimiento constante).
+
+**Conclusión estratégica:**
+ Esta consulta permite transformar el engagement en un indicador de fidelidad y potencial futuro, ayudando a segmentar influencers en estrella, confiables o en riesgo.
 
 ---
 

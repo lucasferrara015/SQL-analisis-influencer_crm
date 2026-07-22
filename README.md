@@ -102,9 +102,11 @@ La estrategia debería priorizar a Ana López y Javier Torres como perfiles estr
 
 **Insight de negocio:**
 
-Ana López cumple con los criterios de temática (Moda), supera el mínimo de engagement y está activa.
-Su rendimiento histórico muestra buen nivel de interacciones y una colaboración reciente.
-**Acción:** recomendarla como candidata prioritaria para la próxima campaña de moda.
+Valentina Paz (micro influencer en Instagram, temática Fitness) muestra un engagement real de 0.1960, con 3 colaboraciones registradas y una última colaboración en estado pendiente. Esto indica potencial de crecimiento, pero aún con baja maduración de campañas.
+
+María García (también micro influencer en Instagram, temática Fitness) presenta un engagement real de 0.1842, con 5 colaboraciones y una última colaboración en estado activa. Su historial más amplio y continuidad en campañas la posicionan como un perfil más consolidado.
+
+Ambos perfiles superan el umbral mínimo de engagement (≥0.01), lo que valida su inclusión en el reporte de selección de talento.
 
 ---
 

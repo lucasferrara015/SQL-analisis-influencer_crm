@@ -283,15 +283,16 @@ A medida que se sumen más colaboraciones, se podrá identificar si su tendencia
 
 **Insight de negocio:** 
 
-TikTok (video) domina en engagement promedio, confirmando que los contenidos audiovisuales cortos y dinámicos son los más efectivos para captar la atención.
+TikTok (video) lidera con un engagement promedio altísimo (20.775), incluso con pocas publicaciones. Esto confirma que el formato audiovisual corto es el más potente para captar atención.
 
-YouTube (video) también muestra un rendimiento elevado, ideal para contenidos más largos y profundos que mantienen la interacción.
+YouTube (video) ocupa el segundo lugar (9.715), ideal para contenidos más largos y profundos, con gran capacidad de mantener interacción.
 
-Instagram reels se consolidan como el formato más competitivo dentro de Instagram, con un engagement cercano al de los videos, siendo la mejor apuesta en esa plataforma.
+Instagram (video y reels) muestran un rendimiento competitivo (4.845 y 4.678), siendo los formatos más efectivos dentro de la plataforma. Los reels destacan por volumen de publicaciones (22), lo que indica consistencia y preferencia de la audiencia.
 
-Instagram video tiene un rendimiento intermedio, mientras que Instagram imagen queda muy por debajo, evidenciando que los formatos estáticos generan menor interacción.
+Instagram (imagen) queda muy por debajo (936), evidenciando que los formatos estáticos generan menor interacción frente a los audiovisuales.
 
-**Estrategia:** priorizar video en TikTok y YouTube, mantener reels en Instagram como formato clave, y reducir la inversión en publicaciones estáticas para maximizar el retorno en engagement.
+**Estrategia:** 
+El video es el motor del engagement, y las marcas deberían concentrar recursos en formatos audiovisuales, relegando los contenidos estáticos a un rol secundario.
 
 
 

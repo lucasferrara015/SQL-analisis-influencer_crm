@@ -189,10 +189,19 @@ Reforzar las prácticas de publicación que dieron mejores resultados y ajustar 
 
 **Insight de negocio:** 
 
-María García es la influencer más rentable, con el ROI más alto y una tasa de conversión sólida: ideal para campañas orientadas a ventas directas.
-Roberto Sánchez, Valentina Paz y Ana López muestran un buen equilibrio entre ingresos y conversión, recomendables para mantener consistencia en resultados.
-Javier Torres genera ingresos elevados pero con baja tasa de conversión, lo que lo posiciona mejor en campañas de alcance y branding.
-Elena Muñoz, Carlos Ruiz, Sofía Medina y Diego Rivas presentan menor eficiencia en ROI y conversión, por lo que conviene asignarles campañas de visibilidad o engagement en lugar de performance puro.
+Javier Torres lidera en ingresos generados (4000) aunque con una tasa de conversión muy baja (0.0003). Esto indica que logra volumen de ventas, pero necesita muchos clics para concretar cada transacción.
+
+María García y Ana López se posicionan en segundo y tercer lugar en ingresos (2500 y 2000), con tasas de conversión más altas (0.0011–0.0013), lo que refleja mejor eficiencia en transformar clics en ventas.
+
+Roberto Sánchez iguala a Ana López en ingresos (2000) y tasa de conversión (0.0013), mostrando consistencia aunque sin destacar en volumen.
+
+Valentina Paz, Elena Muñoz y Carlos Ruiz presentan tasas de conversión relativamente más altas (0.0013–0.0017), pero con ingresos bajos (900–700–500). Son perfiles eficientes en proporción, pero aún con poco alcance.
+
+Diego Rivas queda en un punto intermedio: ingresos moderados (1500) pero con tasa de conversión baja (0.0005), lo que sugiere que necesita optimizar la calidad de sus clics.
+
+**Conclusión estratégica**
+
+La estrategia debería priorizar a Javier Torres por volumen y a María García/Ana López por eficiencia, mientras que los perfiles con ingresos bajos pero buena conversión pueden ser testeados en campañas específicas para evaluar su potencial de escalamiento.
 
 ---
 

@@ -1,63 +1,40 @@
--- ---------------------------------------------------
--- 8. Consulta: Segmentación estratégica - Matriz de rendimiento y coste
--- Objetivo: clasificar influencers en cuadrantes estratégicos según su ROI en ventas y coste total
--- Lógica: se calculan umbrales globales de ROI y coste promedio; luego se compara cada influencer contra esos valores
--- Nota técnica: uso de NULLIF para evitar división por cero; CASE para asignar cuadrantes; DECLARE y SELECT INTO para calcular umbrales dinámicos
--- Limitación: depende de la correcta asociación entre ventas y colaboraciones; no contempla influencers sin métricas registradas
--- ---------------------------------------------------
+-- Consulta: Matriz de Cuadrantes con AVG() OVER()
+-- Objetivo: clasificar influencers según ROI en ventas y coste total
+-- Lógica: se calculan ROI y coste por influencer; luego se comparan con los promedios globales usando funciones ventana
+-- Nota técnica: se emplea AVG() OVER() para obtener umbrales sin subconsultas adicionales; ROUND y NULLIF evitan decimales excesivos y división por cero
+-- Limitación: no contempla factores cualitativos (tipo de producto, duración de campaña) ni métricas externas; ROI puede distorsionarse si los pagos o ventas están incompletos
 
-DELIMITER $$
-
--- Procedimiento almacenado para generar matriz de rendimiento/coste
-CREATE PROCEDURE sp_matriz_rendimiento_coste ()
-BEGIN
-    -- Calcular umbrales globales de ROI y coste
-    DECLARE avg_roi DECIMAL(10,2);
-    DECLARE avg_coste DECIMAL(10,2);
-
-    SELECT AVG(roi_ventas), AVG(coste_total)
-    INTO avg_roi, avg_coste
-    FROM (
-        SELECT i.influencer_id,
-               SUM(v.monto_total) / NULLIF(SUM(c.pago_estimado),0) AS roi_ventas, -- ROI por influencer
-               SUM(c.pago_estimado) AS coste_total -- coste total invertido
-        FROM influencers i
-        JOIN colaboraciones c ON i.influencer_id = c.influencer_id
-        LEFT JOIN codigos_descuento cd ON c.colab_id = cd.colab_id
-        LEFT JOIN ventas v ON cd.codigo_descuento = v.codigo_descuento
-        WHERE i.estado = 'activo'
-        GROUP BY i.influencer_id
-    ) sub;
-
-    -- Clasificación en cuadrantes según ROI y coste
-    SELECT i.influencer_id,
-           i.nombre,
-           SUM(v.monto_total) / NULLIF(SUM(c.pago_estimado),0) AS roi_ventas,
-           SUM(c.pago_estimado) AS coste_total,
-           CASE
-               WHEN (SUM(v.monto_total) / NULLIF(SUM(c.pago_estimado),0)) >= avg_roi
-                    AND SUM(c.pago_estimado) < avg_coste
-               THEN 'Alto rendimiento / Bajo coste → Máxima prioridad'
-               
-               WHEN (SUM(v.monto_total) / NULLIF(SUM(c.pago_estimado),0)) >= avg_roi
-                    AND SUM(c.pago_estimado) >= avg_coste
-               THEN 'Alto rendimiento / Alto coste → Evaluar presupuesto'
-               
-               WHEN (SUM(v.monto_total) / NULLIF(SUM(c.pago_estimado),0)) < avg_roi
-                    AND SUM(c.pago_estimado) < avg_coste
-               THEN 'Bajo rendimiento / Bajo coste → Campañas de bajo riesgo'
-               
-               ELSE 'Bajo rendimiento / Alto coste → Descartar o renegociar'
-           END AS cuadrante
+-- REFACTORIZADA: Matriz de Cuadrantes usando AVG() OVER()
+WITH base_rendimiento AS (
+    SELECT 
+        i.influencer_id,
+        i.nombre,
+        ROUND(SUM(v.monto_total) / NULLIF(SUM(c.pago_estimado), 0), 2) AS roi_ventas,
+        SUM(c.pago_estimado) AS coste_total
     FROM influencers i
     JOIN colaboraciones c ON i.influencer_id = c.influencer_id
     LEFT JOIN codigos_descuento cd ON c.colab_id = cd.colab_id
     LEFT JOIN ventas v ON cd.codigo_descuento = v.codigo_descuento
     WHERE i.estado = 'activo'
-    GROUP BY i.influencer_id, i.nombre;
-END$$
-
-DELIMITER ;
-
--- Ejemplo de ejecución
-CALL sp_matriz_rendimiento_coste();
+    GROUP BY i.influencer_id, i.nombre
+),
+matriz_con_umbrales AS (
+    SELECT 
+        *,
+        -- Calculo los promedios globales una sola vez con ventana (sin subconsulta)
+        AVG(roi_ventas) OVER () AS avg_roi_global,
+        AVG(coste_total) OVER () AS avg_coste_global
+    FROM base_rendimiento
+)
+SELECT 
+    nombre,
+    roi_ventas,
+    coste_total,
+    CASE 
+        WHEN roi_ventas >= avg_roi_global AND coste_total < avg_coste_global THEN '🚀 Máxima prioridad'
+        WHEN roi_ventas >= avg_roi_global AND coste_total >= avg_coste_global THEN '⚖️ Evaluar presupuesto'
+        WHEN roi_ventas < avg_roi_global AND coste_total < avg_coste_global THEN '🛡️ Bajo riesgo'
+        ELSE '🔴 Descartar o renegociar'
+    END AS cuadrante_estrategico
+FROM matriz_con_umbrales
+ORDER BY roi_ventas DESC;

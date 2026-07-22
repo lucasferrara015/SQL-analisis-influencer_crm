@@ -1,23 +1,27 @@
--- ---------------------------------------------------
--- 4. Consulta: Evaluación de campañas - Costo por interacción
--- Objetivo: calcular la rentabilidad de cada campaña en términos de costo por interacción
--- Lógica: se suman los pagos estimados de las colaboraciones y se dividen por el total de interacciones (likes, comentarios, compartidos)
--- Nota técnica: uso de NULLIF para evitar división por cero; agrupación por campania_id para obtener métricas por campaña
--- Limitación: no contempla campañas sin publicaciones o métricas registradas
--- ---------------------------------------------------
+-- Consulta: Costo por interacción vs Promedio Global
+-- Objetivo: evaluar la eficiencia de campañas comparando el costo por interacción con el promedio global
+-- Lógica: se calcula el costo por interacción por campaña y se usa AVG() OVER() para obtener el promedio global en una sola pasada
+-- Nota técnica: ROUND limita decimales; NULLIF evita división por cero; la ventana OVER() replica el promedio en cada fila
+-- Limitación: no contempla calidad de interacción ni factores externos (tipo de campaña, duración, contexto); depende de la precisión de pagos e interacciones registradas
 
--- Creación de vista para reutilización
-CREATE VIEW vw_costo_por_interaccion AS
-SELECT c.campania_id,
-       SUM(c.pago_estimado) AS coste_total, -- inversión total de la campaña
-       SUM(mp.likes + mp.comentarios + mp.compartidos) AS interacciones_totales, -- total de interacciones
-       SUM(c.pago_estimado) / NULLIF(SUM(mp.likes + mp.comentarios + mp.compartidos),0) AS costo_por_interaccion -- costo promedio por interacción
-FROM colaboraciones c
-JOIN publicaciones p ON c.colab_id = p.colab_id
-JOIN metricas_publicacion mp ON p.publicacion_id = mp.publicacion_id
-GROUP BY c.campania_id;
-
--- Consulta de resultados ordenados (campañas más rentables primero)
-SELECT * 
-FROM vw_costo_por_interaccion
+-- #4: Costo por interacción vs Promedio Global
+WITH costos_campana AS (
+    SELECT 
+        campania_id,
+        ROUND(SUM(c.pago_estimado), 2) AS coste_total,
+        SUM(mp.likes + mp.comentarios + mp.compartidos) AS interacciones,
+        ROUND(SUM(c.pago_estimado) / NULLIF(SUM(mp.likes + mp.comentarios + mp.compartidos), 0), 2) AS costo_por_interaccion
+    FROM colaboraciones c
+    JOIN publicaciones p ON c.colab_id = p.colab_id
+    JOIN metricas_publicacion mp ON p.publicacion_id = mp.publicacion_id
+    GROUP BY campania_id
+)
+SELECT 
+    campania_id,
+    costo_por_interaccion,
+    interacciones,
+    -- Ventana que calcula el promedio de TODAS las filas y lo repite en cada fila
+    ROUND(AVG(costo_por_interaccion) OVER (), 2) AS promedio_global,
+    ROUND(costo_por_interaccion - AVG(costo_por_interaccion) OVER (), 2) AS diferencia_con_promedio
+FROM costos_campana
 ORDER BY costo_por_interaccion ASC;

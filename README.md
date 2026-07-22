@@ -120,12 +120,17 @@ Ambos perfiles superan el umbral mínimo de engagement (≥0.01), lo que valida 
 
 **Insight de negocio:** 
 
-Campañas 2, 10 y 1 → más rentables, con menor costo por interacción; generan gran engagement con baja inversión.
-Campañas 11 y 4 → rentabilidad intermedia, aún aceptables en eficiencia.
-Campañas 15, 5, 13 y 12 → menos eficientes, con alto costo por interacción; requieren revisión de estrategia o renegociación de condiciones.
+Las campañas 10, 2 y 11 destacan por tener el costo por interacción más bajo (0.19–0.28), muy por debajo del promedio global (1.86). Esto significa que generan interacciones de manera altamente eficiente, con diferencias negativas de más de -1.5 respecto al promedio.
+
+La campaña 2 además combina eficiencia con volumen alto de interacciones (74.545), lo que la convierte en un caso de éxito tanto en escala como en costo.
+
+Las campañas 4, 16 y 1 mantienen costos moderados (0.37–0.45), aún por debajo del promedio, pero con menor volumen de interacciones, lo que las hace útiles para sostener presencia sin ser las más rentables.
+
+Las campañas 15 y 5 muestran costos más cercanos al promedio (0.54 y 0.80), con diferencias menores (-1.32 y -1.06). Aunque siguen siendo más eficientes que el promedio, su margen de ventaja es reducido.
+
 🚀 **Conclusión estratégica:**
 
-Priorizar campañas con bajo costo por interacción para maximizar ROI, y ajustar presupuesto o estrategia en aquellas con baja eficiencia.
+La estrategia de marketing debería concentrar recursos en las campañas más eficientes (10, 2, 11), usar las intermedias como soporte, y evaluar ajustes en las menos competitivas para mantener la rentabilidad global.
 
 ---
 

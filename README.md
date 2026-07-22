@@ -38,7 +38,7 @@ Todo ello con un enfoque práctico y orientado a resultados.
 - `README.md` → documentación principal  
 
 ---
-# 📊 Guía de Consultas SQL - Influencer CRM
+# 📈 Guía de Consultas Analíticas
 
 Este proyecto contiene 12 consultas SQL aplicadas a un CRM de influencers.  
 Cada consulta responde a una pregunta clave de marketing y se traduce en insights accionables.

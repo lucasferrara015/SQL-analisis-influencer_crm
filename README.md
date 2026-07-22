@@ -54,17 +54,18 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 
 **Insight de negocio:**  
 
-María García (ROI 5,91) y Ana López (ROI 5,15) → son las más eficientes: generan muchas interacciones con baja inversión.
-Acción: priorizar su participación en campañas futuras.
+Ana López lidera con el ROI más alto (2.94), logrando gran eficiencia: pocas inversiones y alto volumen de interacciones.
 
-Javier Torres (ROI 3,70) → alto volumen de interacciones, pero con inversión elevada.
-Acción: usarlo en campañas de gran visibilidad, más que de eficiencia.
+Javier Torres ocupa el segundo lugar (2.70) con un volumen masivo de interacciones (más de 100k), lo que lo convierte en un perfil clave para campañas de alcance masivo.
 
-Elena Muñoz (ROI 2,06) y Diego Rivas (ROI 1,81) → menor eficiencia en costo por interacción.
-Acción: reconsiderar su inclusión en campañas de alto presupuesto o renegociar condiciones.
+María García mantiene un ROI sólido (2.38) con inversión moderada, lo que la hace confiable para campañas balanceadas entre costo y rendimiento.
+
+Elena Muñoz y Diego Rivas muestran ROI intermedio (1.31 y 1.13), útiles para sostener consistencia pero sin picos de eficiencia.
+
+Carlos Ruiz, Sofía Medina y Roberto Sánchez presentan ROI bajo (<1.1), lo que indica que sus campañas generan menos retorno por cada peso invertido.
 
 🚀 **Conclusión estratégica:**
-Optimizar inversión con María y Ana, usar a Javier para alcance masivo, y revisar contratos de Elena y Diego para balancear eficiencia y visibilidad.
+La estrategia debería priorizar a Ana López como referente de eficiencia y a Javier Torres para campañas de gran alcance. María García es ideal como perfil versátil que combina buen ROI con inversión moderada. El resto del grupo puede mantenerse en campañas de soporte o visibilidad, pero con expectativas controladas en términos de conversión y retorno.
 
 ---
 

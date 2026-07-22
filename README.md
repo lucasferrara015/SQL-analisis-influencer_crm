@@ -92,7 +92,7 @@ Priorizar a María y Ana para maximizar ROI en clicks, usar a Javier para visibi
 ## 3. Selección de talento
 **Pregunta de negocio:** ¿Qué influencers activos son recomendables para próximas campañas?  
 
-📂 [Ver consulta completa](./sql/influencers_recomendados.sql)
+📂 [Ver consulta completa](./sql/Selección_de_Talento.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):  
 ![Influencer recomendado Result](./screenshots/03_Seleccion_Talento.png)
@@ -167,7 +167,7 @@ reforzar las prácticas de publicación que dieron mejores resultados y ajustar 
 ## 7. Medición de ventas: Tasa de conversión de códigos de descuento
 **Pregunta de negocio:** ¿Qué códigos de descuento generan más ventas y ROI?  
 
-📂 [Ver consulta completa](./sql/conversion_codigos.sql)
+📂 [Ver consulta completa](./sql/Tasa_de_Conversion.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
 ![Ventas roi tasa conversion Result](./screenshots/07_Tasa_de_conversion.png)
@@ -222,7 +222,7 @@ mantener un rango de 2–3 publicaciones semanales como estándar, reservando pu
 ## 10. Lealtad del influencer: Repetibilidad y mejora en el tiempo
 **Pregunta de negocio:** ¿Los influencers mejoran, mantienen o declinan su rendimiento en colaboraciones sucesivas?  
  
-📂 [Ver consulta completa](./sql/lealtad_influencer.sql)
+📂 [Ver consulta completa](./sql/Trayectoria_de_rendimiento.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
 

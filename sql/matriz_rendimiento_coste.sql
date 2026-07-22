@@ -4,7 +4,7 @@
 -- Nota técnica: se emplea AVG() OVER() para obtener umbrales sin subconsultas adicionales; ROUND y NULLIF evitan decimales excesivos y división por cero
 -- Limitación: no contempla factores cualitativos (tipo de producto, duración de campaña) ni métricas externas; ROI puede distorsionarse si los pagos o ventas están incompletos
 
--- REFACTORIZADA: Matriz de Cuadrantes usando AVG() OVER()
+-- REFACTORIZADA 8: Matriz de Cuadrantes usando AVG() OVER()
 WITH base_rendimiento AS (
     SELECT 
         i.influencer_id,

@@ -4,13 +4,11 @@
 -- Nota técnica: las funciones ventana permiten capturar valores iniciales y finales sin subconsultas; NULLIF evita división por cero y ROUND limita decimales
 -- Limitación: no contempla factores externos (algoritmos de plataforma, viralidad, estacionalidad); depende de la calidad y frecuencia de los registros de seguidores
 
--- REFACTORIZADA #12: Crecimiento Neto de Seguidores por Campaña
+-- REFACTORIZADA #12: Crecimiento de Audiencia 
 WITH crecimiento_campana AS (
     SELECT 
         i.nombre AS influencer,
         c.campania_id,
-        MIN(si.fecha_registro) AS fecha_inicio_registro,
-        MAX(si.fecha_registro) AS fecha_fin_registro,
         -- Primer valor de seguidores registrado en esa campaña
         FIRST_VALUE(si.seguidores) OVER (
             PARTITION BY i.influencer_id, c.campania_id 
@@ -22,7 +20,18 @@ WITH crecimiento_campana AS (
             PARTITION BY i.influencer_id, c.campania_id 
             ORDER BY si.fecha_registro 
             ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
-        ) AS seguidores_fin
+        ) AS seguidores_fin,
+        -- (Opcional) ver las fechas exactas de inicio y fin del registro
+        FIRST_VALUE(si.fecha_registro) OVER (
+            PARTITION BY i.influencer_id, c.campania_id 
+            ORDER BY si.fecha_registro 
+            ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+        ) AS fecha_inicio_registro,
+        LAST_VALUE(si.fecha_registro) OVER (
+            PARTITION BY i.influencer_id, c.campania_id 
+            ORDER BY si.fecha_registro 
+            ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+        ) AS fecha_fin_registro
     FROM seguidores_influencer si
     JOIN influencers i ON si.influencer_id = i.influencer_id
     JOIN colaboraciones c ON i.influencer_id = c.influencer_id

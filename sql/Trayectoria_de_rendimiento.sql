@@ -4,7 +4,7 @@
 -- Nota técnica: se emplea ROW_NUMBER() para ordenar colaboraciones cronológicamente y LAG() para detectar variaciones; ROUND y NULLIF evitan decimales excesivos y división por cero
 -- Limitación: no contempla factores externos (tipo de campaña, estacionalidad, cambios de algoritmo) que pueden influir en la tendencia; el análisis depende de la calidad de los datos de métricas
 
--- Trayectoria de rendimiento (Mejora / Declina)
+-- 10. Trayectoria de rendimiento  (Mejora / Declina)
 WITH colaboraciones_ordenadas AS (
     SELECT 
         i.influencer_id,

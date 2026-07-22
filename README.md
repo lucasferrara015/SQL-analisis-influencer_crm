@@ -309,13 +309,14 @@ El video es el motor del engagement, y las marcas deberían concentrar recursos 
 
 **Insight de negocio:** 
 
-Elena Muñoz lidera con la mayor tasa de crecimiento (21.43%), mostrando fuerte impacto en campañas.
-Ana López y María García mantienen un crecimiento sólido (20%), posicionándose como influencers confiables.
-Diego Rivas presenta crecimiento moderado (18.75%).
-Javier Torres apenas crece (2.56%), lo que sugiere saturación de su audiencia.
-👉 Priorizar a Elena Muñoz y mantener inversión en Ana López y María García para maximizar ROI.
+Elena Muñoz es un perfil confiable y repetible: su crecimiento estable en distintas campañas la convierte en un activo seguro para mantener resultados constantes.
 
+Ana López y María García destacan por su capacidad de generar incrementos significativos de seguidores en una sola campaña, lo que los hace ideales para acciones de alto impacto.
 
+La estrategia debería combinar perfiles de crecimiento estable (Elena) con perfiles de alto impacto puntual (Ana y María), asegurando tanto continuidad como escalabilidad en la audiencia.
+
+**Conclusión estratégica**
+Elena aporta consistencia, Ana y María aportan volumen, y juntos conforman una base sólida para campañas que busquen tanto fidelización como expansión rápida.
 
 ---
 

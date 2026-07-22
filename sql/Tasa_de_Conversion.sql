@@ -1,8 +1,8 @@
--- Consulta: ROI en Clicks con Ranking Global
--- Objetivo: medir el retorno de inversión en términos de clics generados por cada influencer activo
--- Lógica: se suman los clics y se dividen por la inversión total; se aplica RANK() para asignar posición global según ROI
--- Nota técnica: se usa NULLIF para evitar división por cero y ROUND para limitar decimales; la ventana RANK() ordena influencers por ingresos
--- Limitación: no contempla calidad de los clics ni conversiones posteriores; depende de la precisión de pago_estimado y métricas de clics
+-- Consulta: Tasa de Conversión con Ranking por Ingresos
+-- Objetivo: medir la eficiencia de cada código de descuento en términos de ventas y conversiones
+-- Lógica: se cuentan las ventas y se suman los ingresos por código; se calcula la tasa de conversión (ventas/clicks) y se ordena con RANK() según ingresos
+-- Nota técnica: se emplea NULLIF para evitar división por cero y ROUND para limitar decimales; RANK() asigna posiciones globales por ingresos
+-- Limitación: no contempla calidad de los clics ni factores externos (tipo de campaña, estacionalidad); depende de la precisión de métricas registradas
 
 -- REFACTORIZADA #7: Tasa de Conversión con Ranking por Ingresos
 WITH conversion_detalle AS (

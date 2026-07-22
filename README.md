@@ -153,7 +153,7 @@ Viajes aparece en el nivel Bajo Engagement (560), con pocas publicaciones y baja
 
 **Acción estratégica:**
 
-Priorizar campañas en torno a Fitness y Tecnología para maximizar interacción, y mantener Moda como temática complementaria según objetivos de marca.
+Priorizar campañas en torno a Fitness y Tecnología para maximizar interacción, y mantener Moda y Maquillaje como temática complementaria según objetivos de marca.
 
 ---
 

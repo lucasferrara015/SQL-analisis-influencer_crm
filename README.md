@@ -283,12 +283,19 @@ Javier Torres apenas crece (2.56%), lo que sugiere saturación de su audiencia.
 
 ---
 
-## 📌 Conclusión
-Este proyecto muestra cómo las consultas SQL permiten transformar datos en **inteligencia de negocio real**.  
-La información obtenida ayuda a:
-- Optimizar la inversión en campañas  
-- Seleccionar el mejor talento  
-- Maximizar el rendimiento de las estrategias de marketing con influencers  
+## 🧠 Conclusión General
+El uso de SQL analítico avanzado (CTEs, funciones de ventana, rankings, análisis temporal y de frecuencia) permite extraer valor estratégico de los datos operativos de un CRM de influencers.
+Cada una de las 12 consultas entrega insights accionables que responden a preguntas de negocio reales:
+
+Dónde invertir para maximizar ROI.
+
+A quién elegir para cada objetivo (eficiencia, alcance, conversión, crecimiento).
+
+Cómo ajustar la estrategia de contenido (frecuencia, formato, plataforma).
+
+Cuándo renegociar o descartar un influencer.
+
+Este repositorio es una demostración práctica de cómo los datos pueden guiar decisiones de marketing con precisión.  
 
 
 

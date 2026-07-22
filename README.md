@@ -145,11 +145,15 @@ La estrategia de marketing debería concentrar recursos en las campañas más ef
 
 **Insight de negocio:** 
 
-Fitness y Tecnología destacan como las temáticas con mayor engagement promedio, generando más interacciones por publicación.
-Moda muestra un engagement menor en comparación, aunque sigue siendo relevante.
+Tecnología y Fitness son las temáticas con mayor engagement promedio (4692 y 2673 respectivamente), clasificadas en el nivel Alto Engagement. Esto indica que concentran la atención y generan interacciones de calidad, siendo las más atractivas para campañas de performance.
+
+Moda y Maquillaje se ubican en el rango Medio Engagement (2572 y 1501), con un volumen de publicaciones intermedio. Son temáticas estables que pueden sostener campañas de visibilidad y branding, aunque con menor impacto directo que las de alto nivel.
+
+Viajes aparece en el nivel Bajo Engagement (560), con pocas publicaciones y baja interacción, lo que sugiere saturación o menor relevancia en la audiencia actual.
+
 **Acción estratégica:**
 
-priorizar campañas en torno a Fitness y Tecnología para maximizar interacción, y mantener Moda como temática complementaria según objetivos de marca.
+Priorizar campañas en torno a Fitness y Tecnología para maximizar interacción, y mantener Moda como temática complementaria según objetivos de marca.
 
 ---
 

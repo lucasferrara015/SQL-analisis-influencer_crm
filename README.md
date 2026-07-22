@@ -168,13 +168,14 @@ Priorizar campañas en torno a Fitness y Tecnología para maximizar interacción
 
 **Insight de negocio:**
 
-Se observa una tendencia creciente en el engagement a lo largo del tiempo.
-Los picos en julio sugieren que la segunda campaña tuvo mayor impacto en la audiencia.
-Las variaciones diarias permiten identificar qué contenidos generan más interacción.
-**Acción estratégica:**
+Ana López: muestra un crecimiento inicial fuerte (+55,47% entre junio 2025 y enero 2027), pero luego una caída abrupta (-55,61% en abril 2027). Esto refleja volatilidad: capacidad de escalar, pero con riesgo de saturación o pérdida de interés.
 
-reforzar las prácticas de publicación que dieron mejores resultados y ajustar las que mostraron caídas.
-📌 Nota: El procedimiento almacenado también puede cubrir análisis semanales y mensuales, lo que permite comparar patrones de engagement en diferentes escalas de tiempo.
+Diego Rivas: presenta una evolución muy positiva y sostenida. Creció +120,69% en enero 2027 y luego +92,56% en septiembre 2028. Su trayectoria indica consolidación y capacidad de mantener el interés de la audiencia en el tiempo.
+
+Carlos Ruiz y Elena Muñoz: solo tienen registros iniciales sin evolución posterior, lo que limita el análisis. Necesitan más datos para evaluar tendencias de crecimiento o declive.
+
+**Conclusión estratégica:**
+Reforzar las prácticas de publicación que dieron mejores resultados y ajustar las que mostraron caídas.
 
 ---
 

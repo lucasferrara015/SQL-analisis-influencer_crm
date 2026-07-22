@@ -4,7 +4,7 @@
 -- Nota técnica: se usa NULLIF para evitar división por cero y ROUND para limitar decimales; la ventana RANK() ordena influencers según ROI
 -- Limitación: no contempla calidad de los clics ni conversiones posteriores; depende de la precisión de pago_estimado y métricas de clics
 
--- ROI en Clicks con Ranking Global
+-- 2. ROI en Clicks con Ranking Global
 WITH roi_clicks AS (
     SELECT 
         i.influencer_id,

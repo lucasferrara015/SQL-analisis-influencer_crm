@@ -50,7 +50,7 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 📂 [Ver consulta completa](./sql/roi_engagement.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):  
-![ROI Engagement Result](./screenshots/roi_engagement_screenshot_result.png)
+![ROI Engagement Result](./screenshots/01_roi_engagement_ranking_global.png)
 
 **Insight de negocio:**  
 
@@ -73,7 +73,7 @@ Optimizar inversión con María y Ana, usar a Javier para alcance masivo, y revi
 📂 [Ver consulta completa](./sql/roi_clicks.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):  
-![ROI Click Result](./screenshots/roi_click_screenshot_result.png)
+![ROI Click Result](./screenshots/02_roi_clicks_ranking_global.png)
 
 **Insight de negocio:**
 
@@ -95,7 +95,7 @@ Priorizar a María y Ana para maximizar ROI en clicks, usar a Javier para visibi
 📂 [Ver consulta completa](./sql/influencers_recomendados.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):  
-![Influencer recomendado Result](./screenshots/influencer_recomendado_screenshot_result.png)
+![Influencer recomendado Result](./screenshots/03_Seleccion_Talento.png)
 
 **Insight de negocio:**
 
@@ -111,7 +111,7 @@ Su rendimiento histórico muestra buen nivel de interacciones y una colaboració
 📂 [Ver consulta completa](./sql/costo_por_interaccion.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):  
-![Campania costo por interacción Result](./screenshots/campania_costo_por_interaccion_screenshot_result.png)
+![Campania costo por interacción Result](./screenshots/04_Costo_por_interaccion.png)
 
 **Insight de negocio:** 
 
@@ -131,7 +131,7 @@ Priorizar campañas con bajo costo por interacción para maximizar ROI, y ajusta
 
 📸 Resultado en MySQL Workbench (vista parcial):
 
-![Tematica engagement Result](./screenshots/tematica_engagement_promedio_screenshot_result.png)
+![Tematica engagement Result](./screenshots/05_clasificacion_tematicas.png)
 
 **Insight de negocio:** 
 
@@ -150,7 +150,7 @@ priorizar campañas en torno a Fitness y Tecnología para maximizar interacción
 
 📸 Resultado en MySQL Workbench (vista parcial):
 
-![Evolucion engagement en el tiempo Result](./screenshots/evolucion_engagement_enel_tiempo_screenshot_result.png)
+![Evolucion engagement en el tiempo Result](./screenshots/06_evaluacion_mensual_LAG.png)
 
 **Insight de negocio:**
 
@@ -170,7 +170,7 @@ reforzar las prácticas de publicación que dieron mejores resultados y ajustar 
 📂 [Ver consulta completa](./sql/conversion_codigos.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):
-![Ventas roi tasa conversion Result](./screenshots/ventas_roi_tasa_conversion_screenshot_result.png)
+![Ventas roi tasa conversion Result](./screenshots/07_Tasa_de_conversion.png)
 
 **Insight de negocio:** 
 
@@ -188,7 +188,7 @@ Elena Muñoz, Carlos Ruiz, Sofía Medina y Diego Rivas presentan menor eficienci
 
 📸 Resultado en MySQL Workbench (vista parcial):
 
-![Matriz rendimiento coste Result](./screenshots/matriz_rendimiento_coste_screenshot_result.png)
+![Matriz rendimiento coste Result](./screenshots/08_matriz_rendimiento_coste.png)
 
 **Insight de negocio:** 
 
@@ -206,7 +206,7 @@ Descartar/renegociar: Javier Torres y Diego Rivas → ROI insuficiente frente a 
 
 📸 Resultado en MySQL Workbench (vista parcial):
 
-![Optimizacion freuencia screenshot Result](./screenshots/optimizacion_frecuencia_screenshot_result.png)
+![Optimizacion freuencia screenshot Result](./screenshots/09_optimizacion_frecuencia.png)
 
 **Insight de negocio:** 
 
@@ -226,7 +226,7 @@ mantener un rango de 2–3 publicaciones semanales como estándar, reservando pu
 
 📸 Resultado en MySQL Workbench (vista parcial):
 
-![Lealtad influencer Result](./screenshots/lealtad_influencer_screenshot_result.png)
+![Lealtad influencer Result](./screenshots/10_trayectoria_de_rendimiento.png)
 
 **Insight de negocio:**
 
@@ -244,7 +244,7 @@ Declina: Javier Torres y Sofía Medina muestran una reducción significativa en 
 
 📸 Resultado en MySQL Workbench (vista parcial):
 
-![Rendimiento plataforma formato Result](./screenshots/rendimiento_plataforma_formato_screenshot_result.png)
+![Rendimiento plataforma formato Result](./screenshots/11_rendimiento_plataforma_formato.png)
 
 **Insight de negocio:** 
 
@@ -269,7 +269,7 @@ Instagram video tiene un rendimiento intermedio, mientras que Instagram imagen q
 
 📸 Resultado en MySQL Workbench (vista parcial):
 
-![Crecimiento audiencia seguidores campania Result](./screenshots/crecimiento_audiencia_seguidores_camapania_screenshot_result.png)
+![Crecimiento audiencia seguidores campania Result](./screenshots/12_crecimiento_audiencia.png)
 
 **Insight de negocio:** 
 

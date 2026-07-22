@@ -216,10 +216,15 @@ La estrategia debería priorizar a Javier Torres por volumen y a María García/
 
 **Insight de negocio:** 
 
-Prioridad máxima: Roberto Sánchez, Valentina Paz, María García, Ana López y Carlos Ruiz → combinan ROI alto con costes bajos, ideales para escalar campañas.
-Evaluación de presupuesto: ninguno en este corte, lo que simplifica la asignación de recursos.
-Bajo riesgo: Sofía Medina y Elena Muñoz → ROI bajo pero costes moderados, útiles para campañas de prueba o visibilidad.
-Descartar/renegociar: Javier Torres y Diego Rivas → ROI insuficiente frente a costes elevados, requieren revisión de estrategia o renegociación de condiciones.
+Roberto Sánchez, Valentina Paz, María García, Ana López y Carlos Ruiz se ubican en el cuadrante de “Máxima prioridad”: presentan ROI de ventas relativamente alto en proporción a sus costes, lo que los convierte en perfiles eficientes y estratégicos para maximizar retorno.
+
+Javier Torres y Diego Rivas aparecen en el cuadrante de “Descartar o renegociar”: aunque generan ingresos, sus costes son elevados y su ROI bajo, lo que reduce la rentabilidad de sus campañas.
+
+Elena Muñoz se clasifica en “Bajo riesgo”: su ROI es bajo (0.10), pero también su coste total es moderado. Puede mantenerse en campañas de soporte o nicho sin comprometer demasiado presupuesto.
+
+**Conclusión estratégica**
+
+La estrategia debe concentrar recursos en los perfiles eficientes, optimizar o renegociar los de bajo ROI y alto coste, y usar los de bajo riesgo como soporte secundario.
 
 ---
 

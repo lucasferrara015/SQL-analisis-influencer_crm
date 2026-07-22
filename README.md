@@ -78,15 +78,17 @@ La estrategia debería priorizar a Ana López como referente de eficiencia y a J
 
 **Insight de negocio:**
 
-María García y Ana López → mayor eficiencia en clicks por inversión, ideales para campañas orientadas a conversión.
+Ana López y Carlos Ruiz comparten el ROI por clics más alto (1.13), aunque con perfiles distintos: Ana logra volumen considerable (11.530 clics) mientras Carlos lo hace con bajo volumen (1.800), lo que sugiere eficiencia en ambos extremos.
 
-Javier Torres → gran volumen de clicks, pero con menor eficiencia; útil para campañas de alcance masivo.
+Javier Torres se posiciona tercero (ROI 1.06) pero con un volumen masivo de clics (41.020), lo que lo convierte en un activo clave para campañas de gran alcance.
 
-Elena Muñoz y Diego Rivas → baja eficiencia; conviene revisar condiciones o reservarlos para campañas de nicho.
+María García y Valentina Paz muestran ROI moderado (0.92 y 0.84), útiles para mantener consistencia pero sin picos de eficiencia.
+
+Diego Rivas, Elena Muñoz y Roberto Sánchez presentan ROI bajo (<0.7), lo que indica menor retorno por inversión y necesidad de reevaluar su rol en campañas de performance.
 
 🚀 **Conclusión estratégica:**
 
-Priorizar a María y Ana para maximizar ROI en clicks, usar a Javier para visibilidad, y evaluar la relación costo-beneficio de Elena y Diego.
+La estrategia debería priorizar a Ana López y Javier Torres como perfiles estrella: Ana por su eficiencia y Javier por su alcance masivo. Carlos Ruiz es un caso interesante de alta eficiencia con bajo volumen, ideal para pruebas de nicho o campañas de bajo presupuesto. María García y Valentina Paz pueden sostener campañas de soporte con ROI aceptable. El resto del grupo requiere renegociación o asignación a campañas de visibilidad, ya que su aporte en conversión es limitado.
 
 ---
 

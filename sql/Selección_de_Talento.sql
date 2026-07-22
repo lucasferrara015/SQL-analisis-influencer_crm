@@ -4,7 +4,7 @@
 -- Nota técnica: se usa CTE modular en lugar de VIEW fija para mayor flexibilidad; ROUND limita decimales y COUNT DISTINCT evita duplicados
 -- Limitación: no contempla factores cualitativos (tipo de campaña, duración, contexto de la temática); depende de la calidad de métricas registradas
 
--- Selección de Talento (CTE modular en lugar de VIEW fija)
+-- 3. Selección de Talento (CTE modular en lugar de VIEW fija)
 WITH talento_crudo AS (
     SELECT 
         i.influencer_id,

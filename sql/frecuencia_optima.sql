@@ -1,45 +1,41 @@
--- ---------------------------------------------------
--- 9. Consulta: Optimización de frecuencia - Publicaciones óptimas por semana
--- Objetivo: analizar la relación entre cantidad de publicaciones semanales y engagement promedio
--- Lógica: se cuentan las publicaciones por semana y se calcula el engagement promedio por publicación
--- Nota técnica: uso de NULLIF para evitar división por cero; YEARWEEK para agrupar por semana ISO
--- Limitación: no contempla variaciones por tipo de contenido ni estacionalidad; se centra en influencers activos
--- ---------------------------------------------------
+-- Consulta: Frecuencia Óptima (Análisis de saturación)
+-- Objetivo: identificar el rango de publicaciones semanales que maximiza el engagement sin saturar a la audiencia
+-- Lógica: se agrupan publicaciones por semana e influencer, se calcula el engagement promedio y se clasifican rangos de frecuencia (1-2, 3-4, 5+)
+-- Nota técnica: YEARWEEK organiza cronológicamente; AVG() calcula engagement promedio; CASE asigna categorías de frecuencia
+-- Limitación: no contempla calidad del contenido ni factores externos (algoritmo de plataforma, estacionalidad); el análisis depende de la precisión de métricas registradas
 
--- CTE para calcular publicaciones e interacciones por semana
-WITH publicaciones_por_semana AS (
+-- REFACTORIZADA #9: Frecuencia Óptima (Análisis de saturación)
+WITH frecuencia_semanal AS (
     SELECT 
-        c.influencer_id,
-        YEARWEEK(p.fecha_publicacion, 1) AS semana, -- agrupación por semana ISO
-        COUNT(p.publicacion_id) AS total_publicaciones, -- número de publicaciones en la semana
-        SUM(mp.likes + mp.comentarios + mp.compartidos) AS total_engagement -- total de interacciones
-    FROM publicaciones p
-    JOIN metricas_publicacion mp 
-        ON p.publicacion_id = mp.publicacion_id
-    JOIN colaboraciones c 
-        ON p.colab_id = c.colab_id
-    GROUP BY c.influencer_id, YEARWEEK(p.fecha_publicacion, 1)
+        i.influencer_id,
+        i.nombre,
+        YEARWEEK(p.fecha_publicacion, 1) AS semana,
+        COUNT(p.publicacion_id) AS publicaciones_semana,
+        ROUND(AVG(mp.likes + mp.comentarios + mp.compartidos), 2) AS engagement_promedio_semana
+    FROM influencers i
+    JOIN colaboraciones c ON i.influencer_id = c.influencer_id
+    JOIN publicaciones p ON c.colab_id = p.colab_id
+    JOIN metricas_publicacion mp ON p.publicacion_id = mp.publicacion_id
+    WHERE i.estado = 'activo'
+    GROUP BY i.influencer_id, i.nombre, YEARWEEK(p.fecha_publicacion, 1)
 ),
-
--- CTE para calcular engagement promedio por publicación
-engagement_promedio AS (
+rango_frecuencia AS (
     SELECT 
-        influencer_id,
+        nombre,
         semana,
-        total_publicaciones,
-        total_engagement / NULLIF(total_publicaciones,0) AS engagement_promedio -- promedio de interacciones por publicación
-    FROM publicaciones_por_semana
+        publicaciones_semana,
+        engagement_promedio_semana,
+        CASE 
+            WHEN publicaciones_semana BETWEEN 1 AND 2 THEN '1-2 (Baja)'
+            WHEN publicaciones_semana BETWEEN 3 AND 4 THEN '3-4 (Media)'
+            ELSE '5+ (Alta/Saturación)'
+        END AS rango_frecuencia
+    FROM frecuencia_semanal
 )
-
--- Consulta final: engagement promedio por semana e influencer
 SELECT 
-    i.influencer_id,
-    i.nombre,
-    e.semana,
-    e.total_publicaciones,
-    e.engagement_promedio
-FROM influencers i
-JOIN engagement_promedio e 
-    ON i.influencer_id = e.influencer_id
-WHERE i.estado = 'activo'
-ORDER BY i.influencer_id, e.semana;
+    rango_frecuencia,
+    ROUND(AVG(engagement_promedio_semana), 2) AS engagement_promedio_por_rango,
+    COUNT(*) AS total_semanas_analizadas
+FROM rango_frecuencia
+GROUP BY rango_frecuencia
+ORDER BY engagement_promedio_por_rango DESC;

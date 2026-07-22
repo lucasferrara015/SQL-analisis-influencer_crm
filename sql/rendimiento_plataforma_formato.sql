@@ -4,7 +4,7 @@
 -- Nota técnica: se usa AVG() sobre likes+comentarios+compartidos y COUNT DISTINCT para publicaciones; DENSE_RANK evita saltos en la numeración
 -- Limitación: no contempla la calidad de interacción ni la temporalidad de las publicaciones; el engagement puede variar según campañas específicas
 
--- Top formatos por plataforma con DENSE_RANK
+-- 11. Top formatos por plataforma con DENSE_RANK
 WITH rendimiento_formatos AS (
     SELECT 
         p.plataforma,

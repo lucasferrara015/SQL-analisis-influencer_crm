@@ -50,7 +50,7 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 📂 [Ver consulta completa](./sql/roi_engagement.sql)
 
 📸 Resultado en MySQL Workbench (vista parcial):  
-![ROI Engagement Result](./screenshots/01_roi_engagement_ranking_global.png)
+![ROI Engagement Result](./screenshots/01 roi_engagement_ranking_global.png)
 
 **Insight de negocio:**  
 

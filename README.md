@@ -287,6 +287,9 @@ A medida que se sumen más colaboraciones, se podrá identificar si su tendencia
 
 ![Rendimiento plataforma formato Result](./screenshots/11_rendimiento_plataforma_formato.png)
 
+📸 **Resultado (gráfico de barras agrupadas con Python):**  
+![Plataforma y Formato](./images/Plataforma_formato.png)
+
 **Insight de negocio:** 
 
 TikTok (video) lidera con un engagement promedio altísimo (20.775), incluso con pocas publicaciones. Esto confirma que el formato audiovisual corto es el más potente para captar atención.

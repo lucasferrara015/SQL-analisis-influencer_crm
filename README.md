@@ -169,6 +169,9 @@ Priorizar campañas en torno a Fitness y Tecnología para maximizar interacción
 
 ![Evolucion engagement en el tiempo Result](./screenshots/06_evaluacion_mensual_LAG.png)
 
+📸 **Resultado (gráfico de líneas con Python):**  
+![Evolución Mensual](./images/evolucion_mensual.png)
+
 **Insight de negocio:**
 
 Ana López: muestra un crecimiento inicial fuerte (+55,47% entre junio 2025 y enero 2027), pero luego una caída abrupta (-55,61% en abril 2027). Esto refleja volatilidad: capacidad de escalar, pero con riesgo de saturación o pérdida de interés.

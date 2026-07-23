@@ -52,6 +52,9 @@ Cada consulta responde a una pregunta clave de marketing y se traduce en insight
 📸 Resultado en MySQL Workbench (vista parcial):  
 ![ROI Engagement Result](./screenshots/01_roi_engagement_ranking_global.png)
 
+📸 **Resultado (gráfico generado con Python):**  
+![ROI Engagement](./images/Roi_engagement.png)
+
 **Insight de negocio:**  
 
 Ana López lidera con el ROI más alto (2.94), logrando gran eficiencia: pocas inversiones y alto volumen de interacciones.
